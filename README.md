@@ -20,29 +20,28 @@ This repository contains an automated setup script for configuring a fresh Raspb
 
 ## Usage
 
-1. **Clone or download this repository to your Raspberry Pi:**
-   ```bash
-   git clone <your-repo-url>
-   cd pi
-   ```
+### Quick Install (Recommended)
+Run this one command to install everything:
+```bash
+curl -fsSL https://raw.githubusercontent.com/calvin-barker/pi/main/install.sh | bash
+```
 
-2. **Make the script executable (if not already):**
-   ```bash
-   chmod +x install.sh
-   ```
+### Alternative: Clone and Install
+If you prefer to clone the repository first:
+```bash
+git clone https://github.com/calvin-barker/pi.git
+cd pi
+chmod +x install.sh
+./install.sh
+```
 
-3. **Run the installation script:**
-   ```bash
-   ./install.sh
-   ```
-
-   The script will:
-   - Update system packages
-   - Install all requested tools
-   - Configure zsh with oh-my-zsh
-   - Set up terminal color support
-   - Add useful aliases
-   - Provide post-installation instructions
+The script will:
+- Update system packages
+- Install all requested tools
+- Configure zsh with oh-my-zsh
+- Set up terminal color support
+- Add useful aliases
+- Provide post-installation instructions
 
 ## Post-Installation Steps
 
