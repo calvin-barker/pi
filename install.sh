@@ -128,15 +128,6 @@ configure_zsh() {
     else
         print_warning "TERM=xterm-256color already configured in .zshrc"
     fi
-    
-    # Set zsh as default shell if not already
-    if [ "$SHELL" != "/bin/zsh" ]; then
-        print_status "Setting zsh as default shell..."
-        chsh -s /bin/zsh
-        print_success "zsh set as default shell (will take effect on next login)"
-    else
-        print_warning "zsh is already the default shell"
-    fi
 }
 
 # Function to install Rust
@@ -245,11 +236,11 @@ show_final_instructions() {
     echo "3. Restart your system to ensure all changes take effect"
     echo ""
     echo "Installed tools:"
-    echo "✅ Tailscale - VPN mesh network"
-    echo "✅ neovim - Modern text editor"
-    echo "✅ oh-my-zsh - Enhanced shell framework"
-    echo "✅ Rust - Programming language"
-    echo "✅ uv - Fast Python package installer"
+    echo "✅ Tailscale"
+    echo "✅ neovim"
+    echo "✅ oh-my-zsh"
+    echo "✅ Rust"
+    echo "✅ uv"
     echo "✅ Terminal color support for Kitty"
     echo ""
     echo "Your Raspberry Pi is now ready for development!"
